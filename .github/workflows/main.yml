@@ -16,7 +16,8 @@ jobs:
         python-version: '3.x'
 
     - name: Install dependencies
-      run: pip install pytest
+      run: |
+        pip install numpy torch pytest
 
     - name: Run tests
       run: pytest
